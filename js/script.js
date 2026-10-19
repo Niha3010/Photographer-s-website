@@ -7,7 +7,7 @@ menuButton.addEventListener("click", function () {
   menuButton.setAttribute("aria-expanded", menuIsOpen);
   menuButton.setAttribute(
     "aria-label",
-    menuIsOpen ? "Close navigation" : "Open navigation"
+    menuIsOpen ? "Close navigation" : "Open navigation",
   );
 });
 
