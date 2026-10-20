@@ -1,0 +1,105 @@
+.reviews-title {
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.reviews-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 16px auto 0 auto;
+  background: #111827;
+}
+
+.section-heading {
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.average-text {
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+/* ---------- Review cards ---------- */
+.review-card {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.review-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #111827;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.review-role {
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.review-stars {
+  color: #f59e0b;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.review-text {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/* ---------- Clients ---------- */
+.client-box {
+  padding: 22px 12px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #374151;
+}
+
+/* ---------- Form ---------- */
+.review-form-card {
+  max-width: 600px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.star-btn {
+  padding: 0 2px;
+  border: none;
+  background: none;
+  font-size: 2rem;
+  line-height: 1;
+  color: #d1d5db;
+  cursor: pointer;
+}
+
+.star-btn.filled,
+.star-btn:hover {
+  color: #f59e0b;
+}
