@@ -91,6 +91,7 @@ img {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 70px 10%;
   overflow: hidden;
   background-color: var(--dark-blue);
@@ -109,6 +110,7 @@ img {
 .hero-content {
   position: relative;
   max-width: 600px;
+  text-align: center;
 }
 
 .eyebrow {
