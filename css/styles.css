@@ -87,7 +87,7 @@ img {
 /* Hero section */
 
 .hero {
-  min-height: 560px;
+  min-height: 600px;
   position: relative;
   display: flex;
   align-items: center;
@@ -104,50 +104,51 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.48;
+  opacity: 0.35;
 }
 
 .hero-content {
   position: relative;
-  max-width: 600px;
+  max-width: 750px;
   text-align: center;
-}
-
-.eyebrow {
-  color: var(--dark-blue);
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
 }
 
 .hero .eyebrow {
   color: var(--pale-mint);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
 }
 
 .hero h1 {
-  margin: 15px 0;
-  font-size: clamp(40px, 7vw, 76px);
-  line-height: 1.05;
+  margin: 22px 0;
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1.12;
+  font-weight: 500;
 }
 
 .hero h1 em {
   color: var(--pale-mint);
+  font-weight: normal;
 }
 
 .hero-intro {
-  max-width: 500px;
-  font-size: 18px;
+  max-width: 520px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.8;
 }
 
 .button {
   display: inline-block;
-  margin-top: 15px;
-  padding: 12px 20px;
+  margin-top: 28px;
+  padding: 14px 24px;
   background-color: var(--light-blue);
   color: #173a55;
   font-weight: bold;
   border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
 .button:hover {
@@ -155,24 +156,13 @@ img {
 }
 
 /* About preview */
-
 .about-preview {
   padding: 70px 10%;
-  display: flex;
-  align-items: center;
-  gap: 45px;
 }
 
-.about-photo,
 .about-copy {
-  flex: 1;
-}
-
-.about-photo img {
-  width: 100%;
-  max-height: 430px;
-  object-fit: cover;
-  border-radius: 5px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .about-copy h2 {
@@ -224,6 +214,9 @@ img {
   width: 100%;
   height: 270px;
   object-fit: cover;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
 }
 
 .work-card span {
@@ -234,6 +227,7 @@ img {
 
 .work-card:hover img {
   opacity: 0.85;
+  transform: scale(1.03);
 }
 
 /* Contact section */
@@ -263,10 +257,22 @@ img {
   justify-content: space-between;
   gap: 20px;
 }
-
+.site-footer p {
+  margin: 0;
+}
 .social-links {
   display: flex;
-  gap: 18px;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--warm-white);
+  font-size: 24px;
+  line-height: 1;
 }
 
 .social-links a:hover {
@@ -276,7 +282,8 @@ img {
 /* Mobile layout */
 
 @media (max-width: 700px) {
-  .site-header {
+  .site-header,
+  .site-footer {
     flex-wrap: wrap;
   }
 
@@ -287,7 +294,7 @@ img {
   .main-nav {
     display: none;
     width: 100%;
-    padding: 15px 0 5px;
+    padding: 15px 0;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
@@ -302,11 +309,11 @@ img {
     padding: 55px 7%;
   }
 
-  .about-preview {
-    padding: 45px 7%;
+  .site-footer {
     flex-direction: column;
   }
 
+  .about-preview,
   .featured-work {
     padding: 45px 7%;
   }
@@ -323,13 +330,9 @@ img {
   .work-card img {
     height: 250px;
   }
-
-  .site-footer {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .social-links {
-    flex-wrap: wrap;
-  }
+}
+.reviews-title {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 4px;
 }
